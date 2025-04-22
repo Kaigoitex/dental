@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITEX for Dentists</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #eee;
+    }
+    .logo {
+      max-width: 100px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      color: #0077cc;
+    }
+    .subheadline {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .benefit-box {
+      background: #eaf7ff;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #0077cc;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .video-section {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    iframe {
+      max-width: 90%;
+      border-radius: 10px;
+    }
+    .form-section {
+      background: #f3f3f3;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .form-section h2 {
+      color: #0077cc;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, select, button {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="itex-logo.png" alt="ITEX Logo" class="logo" />
+    <h1>Get New Dental Patients on Demand</h1>
+    <p class="subheadline">Fill Open Chair Time & Trade for Services You Need</p>
+  </header>
+
+  <section class="benefits">
+    <div class="benefit-box">🦷 Bring in More Patients</div>
+    <div class="benefit-box">💳 No Upfront Costs</div>
+    <div class="benefit-box">📅 Fill Unused Appointments</div>
+    <div class="benefit-box">🧾 Trade Dental Care for What You Need</div>
+    <div class="benefit-box">🌐 Get Local Exposure</div>
+  </section>
+
+  <section class="video-section">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DVBaICcGVtM" title="ITEX Overview" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="form-section">
+    <h2>Apply to Join the ITEX Network</h2>
+    <form name="dentist-form" method="POST" data-netlify="true" action="thank-you.html">
+      <input type="text" name="business-name" placeholder="Business Name" required />
+      <input type="text" name="contact-name" placeholder="Contact Person" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="availability" placeholder="Best Time to Reach You" />
+      <textarea name="top-services" placeholder="What Do You Need Most? (e.g., Marketing, Supplies, Equipment)"></textarea>
+      <button type="submit">Request a Call</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 ITEX Dental Exchange | Serving Texas & Florida
+  </footer>
+</body>
+</html>
