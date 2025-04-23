@@ -158,15 +158,24 @@
   </div>
   <section class="form-section">
     <h2>Apply to Join the ITEX Network</h2>
-    <form name="dentist-form" method="POST" data-netlify="true" action="thank-you.html">
-      <input type="text" name="business-name" placeholder="Business Name" required />
-      <input type="text" name="contact-name" placeholder="Contact Person" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="availability" placeholder="Best Time to Reach You" />
-      <textarea name="top-services" placeholder="What Do You Need Most? (e.g., Marketing, Supplies, Equipment)"></textarea>
-      <button type="submit">Request a Call</button>
-    </form>
+   <form action="https://formsubmit.co/kai.go@itex.net" method="POST">
+  <!-- HONEYPOT FIELD TO PREVENT SPAM -->
+  <input type="hidden" name="_honey" style="display:none">
+  
+  <!-- DISABLE CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- REDIRECT TO THANK YOU PAGE -->
+  <input type="hidden" name="_next" value="https://kaigoitex.github.io/thank-you.html">
+
+  <input type="text" name="business-name" placeholder="Business Name" required />
+  <input type="text" name="contact-name" placeholder="Contact Person" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="tel" name="phone" placeholder="Phone Number" required />
+  <input type="text" name="availability" placeholder="Best Time to Reach You" />
+  <textarea name="top-services" placeholder="What Do You Need Most? (e.g., Marketing, Supplies, Equipment)"></textarea>
+  <button type="submit">Request a Call</button>
+</form>
   </section>
 
   <footer>
